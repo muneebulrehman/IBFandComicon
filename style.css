@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
 
+html {
+	scroll-behavior: smooth;
+}
 :root {
 	--imperial-red: hsla(355, 78%, 56%, 1);
 	--honeydew: hsla(105, 55%, 96%, 1);
@@ -175,9 +178,11 @@ p {
 	height: 0;
 	overflow: hidden;
 	transition: var(--transition);
+	text-align: center;
 }
 .show-links {
 	height: 380px;
+	background-color: var(--honeydew);
 }
 .nav-link {
 	display: block;
@@ -190,7 +195,10 @@ p {
 	font-weight: 600;
 	color: var(--clr-grey-1);
 }
-.nav-link:hover {
+.nav-link-btn {
+	display: none;
+}
+.active {
 	color: var(--imperial-red);
 }
 @media screen and (min-width: 768px) {
@@ -258,6 +266,16 @@ p {
 	font-size: 1.1rem;
 	margin: 1rem 0;
 }
+.date-container {
+	margin: auto;
+	margin-top: 1rem;
+	margin-bottom: 3rem;
+}
+.date-container td {
+	font-family: sans-serif;
+	padding: 0.5rem;
+	text-align: center;
+}
 
 @media screen and (min-width: 768px) {
 	.hero-text {
@@ -280,6 +298,18 @@ p {
 	}
 	.hero-text h3 {
 		font-size: 1.8rem;
+	}
+	.information {
+		display: flex;
+		gap: 4rem;
+	}
+	.date-container {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.date-container td {
+		padding: 1rem;
+		text-align: center;
 	}
 }
 .programs {
@@ -352,6 +382,7 @@ p {
 		display: flex;
 		justify-content: center;
 		gap: 0.2rem;
+		flex-wrap: wrap;
 	}
 	.one-program {
 		display: flex;

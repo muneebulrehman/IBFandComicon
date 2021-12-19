@@ -102,3 +102,39 @@ function printCards() {
 printCards();
 
 loadMore.addEventListener('click', printCards);
+
+function countDown() {
+	let now = new Date();
+	let eventDate = new Date(2022, 01, 24, 09);
+	let currentTime = now.getTime();
+	let eventTime = eventDate.getTime();
+
+	let remTime = eventTime - currentTime;
+	let s = Math.floor(remTime / 1000);
+	let m = Math.floor(s / 60);
+	let h = Math.floor(m / 60);
+	let d = Math.floor(h / 24);
+
+	h %= 24;
+	m %= 60;
+	s %= 60;
+
+	h = h < 10 ? '0' + h : h;
+	m = m < 10 ? '0' + m : m;
+	s = s < 10 ? '0' + s : s;
+	document.getElementById('days').textContent = d;
+	document.getElementById('hours').textContent = h;
+	document.getElementById('minutes').textContent = m;
+	document.getElementById('seconds').textContent = s;
+
+	setTimeout(countDown, 1000);
+}
+countDown();
+
+const navToggle = document.getElementById('nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+const navLinkBtn = document.querySelector('.nav-link-btn');
+navToggle.addEventListener('click', () => {
+	navLinks.classList.toggle('show-links');
+	navLinkBtn.classList.toggle('hidden');
+});
