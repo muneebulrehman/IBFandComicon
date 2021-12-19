@@ -73,12 +73,13 @@ let data = [
 	},
 ];
 const hero = document.querySelector('.hero');
-console.log(hero);
 let featuredSpeaker = document.querySelector('.featured-speakers');
-console.log(featuredSpeaker);
+const loadMore = document.querySelector('.load-more');
+const loadMoreBtn = document.querySelector('.load-more-btn');
+let initialLoad = 0;
 
 function printCards() {
-	for (let i = 0; i < data.length; i += 1) {
+	for (let i = initialLoad; i < initialLoad + 4; i++) {
 		let markup = `<div class="each-speaker">
 					<div class='speaker-img'>
 					<img src='${data[i].img}' class='speaker-photo' alt="">
@@ -92,7 +93,12 @@ function printCards() {
 					</div>
 				</div>`;
 		featuredSpeaker.innerHTML += markup;
+		if (initialLoad === data.length - 4) {
+			loadMoreBtn.classList.add('hidden');
+		}
 	}
+	initialLoad += 4;
 }
-
 printCards();
+
+loadMore.addEventListener('click', printCards);

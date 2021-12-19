@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
 
 :root {
 	--imperial-red: hsla(355, 78%, 56%, 1);
@@ -8,7 +10,7 @@
 	--prussian-blue: hsla(215, 50%, 23%, 1);
 	--clr-grey-1: hsl(209, 61%, 16%);
 	--clr-grey-5: hsl(210, 22%, 49%);
-	--font-family: 'Raleway', sans-serif;
+	--font-family: Raleway, 'sans-serif';
 	--clr-white: #fff;
 	--transition: all 0.3s linear;
 	--spacing: 0.25rem;
@@ -449,7 +451,7 @@ p {
 
 @media screen and (min-width: 768px) {
 	.speakers {
-		padding: 5rem;
+		padding: 5rem 2rem;
 	}
 	.featured-speakers {
 		display: grid;
@@ -491,5 +493,141 @@ p {
 		-ms-border-radius: 8px;
 		-o-border-radius: 8px;
 		border-radius: 8px;
+	}
+}
+@media (min-width: 982px) {
+	.speakers {
+		padding: 5rem;
+	}
+}
+.load-more {
+	background: transparent;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	padding: 0.75rem 3rem;
+	margin: 0 auto;
+	cursor: pointer;
+	transition: var(--transition);
+	-webkit-transition: var(--transition);
+	-moz-transition: var(--transition);
+	-ms-transition: var(--transition);
+	-o-transition: var(--transition);
+}
+.load-more:hover {
+	background: hsla(355, 78%, 56%, 0.2);
+	transform: translateY(-5px);
+	-webkit-transform: translateY(-5px);
+	-moz-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
+}
+.partners {
+	height: content-fit;
+	width: 100;
+	background: rgba(0, 0, 0, 0.7);
+	position: relative;
+}
+.partners .program-title h2 {
+	color: var(--honeydew);
+}
+
+.all-partners {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.lh {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.lh h3 {
+	font-family: Playfair, 'sans-serif';
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	padding-top: 0;
+}
+.google {
+	display: flex;
+	align-items: center;
+}
+
+.google h3 {
+	font-family: Kumbh Sans, 'sans-serif';
+	letter-spacing: 5px;
+	text-transform: capitalize;
+}
+.yelp {
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-right: 1rem;
+}
+.yelp h3 {
+	font-family: Helvetica Rounded, inherit;
+}
+.yelp-i {
+	display: inline-block;
+	font-size: 2rem;
+	position: absolute;
+	left: 3.5rem;
+	top: -0.5rem;
+}
+.cc {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.cc h3 {
+	font-style: italic;
+	margin-bottom: 0;
+}
+.airbnb {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.airbnb-i {
+	display: inline-block;
+	font-size: 3rem;
+	padding: 0;
+	margin: 0;
+}
+.airbnb h3 {
+	text-transform: lowercase;
+	margin-left: 0.5rem;
+	align-self: center;
+}
+.partners:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgb(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+	.partners {
+		padding: 5rem;
+	}
+	.all-partners {
+		display: flex;
+		gap: 3rem;
+		justify-content: center;
+		flex-wrap: no-wrap;
+	}
+	.yelp-i {
+		font-size: 3rem;
+		position: absolute;
+		left: 4.5rem;
+		top: -1rem;
 	}
 }
