@@ -106,6 +106,24 @@ p {
 	background: linear-gradient(rgba(139, 51, 48, 0.9), rgba(29, 53, 87, 0.8)),
 		url(./images/Hero-img.jpg) center/cover no-repeat;
 }
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--clr-grey-1);
+	padding: 0;
+	background: transparent;
+}
+.logo-img {
+	height: 4rem;
+	width: 4rem;
+}
+
+.logo span {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
 .navbar {
 	float: top;
 	position: fixed;
@@ -446,9 +464,6 @@ p {
 	background-color: grey;
 	margin-bottom: 0.5rem;
 }
-.speaker-text-p {
-}
-
 @media screen and (min-width: 768px) {
 	.speakers {
 		padding: 5rem 2rem;
@@ -525,10 +540,10 @@ p {
 	-o-transform: translateY(-5px);
 }
 .partners {
-	height: content-fit;
-	width: 100;
+	width: 100%;
 	background: rgba(0, 0, 0, 0.7);
 	position: relative;
+	padding: 3rem 1rem;
 }
 .partners .program-title h2 {
 	color: var(--honeydew);
@@ -629,5 +644,27 @@ p {
 		position: absolute;
 		left: 4.5rem;
 		top: -1rem;
+	}
+}
+.footer {
+	display: none;
+}
+@media (min-width: 768px) {
+	.footer {
+		padding: 3rem;
+		background-color: var(--honeydew);
+		color: var(--prussian-blue);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+		flex-wrap: wrap;
+	}
+	.footer .logo-img {
+		width: 8rem;
+		height: 8rem;
+	}
+	.footer .logo-text span {
+		font-size: 2rem;
 	}
 }
