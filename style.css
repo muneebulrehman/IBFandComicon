@@ -177,14 +177,16 @@ p {
 	overflow: hidden;
 	text-align: center;
 	background-color: transparent;
-	backdrop-filter: blur(6px);
+	padding-top: 1.5rem;
 }
 .show-links {
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 380px;
-	width: 80%;
+	bottom: 0;
+	right: 0;
+	height: 100vh;
+	backdrop-filter: blur(6px);
 }
 .nav-link {
 	font-family: sans-serif;
@@ -203,6 +205,15 @@ p {
 }
 .active {
 	color: var(--imperial-red);
+}
+#close-btn {
+	background: transparent;
+	border: none;
+	font-size: 3rem;
+	position: absolute;
+	top: 0rem;
+	left: 90%;
+	cursor: pointer;
 }
 @media screen and (min-width: 768px) {
 	.navbar {
@@ -230,11 +241,15 @@ p {
 		padding: 1rem;
 	}
 	.nav-links {
+		padding-top: 0;
 		height: auto;
 		display: flex;
 	}
 	.nav-link:hover {
 		padding: inherit 0;
+	}
+	#close-btn {
+		display: none;
 	}
 }
 .hero {

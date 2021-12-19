@@ -141,10 +141,12 @@ const navToggle = document.getElementById('nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 const navLinkBtn = document.querySelector('.nav-link-btn');
 const scrollLinks = document.querySelectorAll('.scroll-links');
+const closeBtn = document.getElementById('close-btn');
 
 navToggle.addEventListener('click', () => {
-	navLinks.classList.toggle('show-links');
-	navLinkBtn.classList.toggle('hidden');
+	navLinks.classList.add('show-links');
+	// navLinkBtn.classList.toggle('hidden');
+	closeBtn.classList.remove('hidden');
 });
 
 scrollLinks.forEach((link) => {
@@ -160,6 +162,11 @@ function removeActive() {
 		link.classList.remove('active');
 	});
 }
+
+closeBtn.addEventListener('click', () => {
+	navLinks.classList.remove('show-links');
+	closeBtn.classList.add('hidden');
+});
 
 // const logo = document.querySelector('.logo');
 // logo.onClick = function (e) {
