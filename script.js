@@ -78,6 +78,8 @@ const loadMore = document.querySelector('.load-more');
 const loadMoreBtn = document.querySelector('.load-more-btn');
 let initialLoad = 0;
 
+// Function to load featured speakers section dynamically.
+
 function printCards() {
 	for (let i = initialLoad; i < initialLoad + 4; i++) {
 		let markup = `<div class="each-speaker">
@@ -102,6 +104,8 @@ function printCards() {
 printCards();
 
 loadMore.addEventListener('click', printCards);
+
+// Function to load timer in hero section
 
 function countDown() {
 	let now = new Date();
@@ -131,10 +135,34 @@ function countDown() {
 }
 countDown();
 
+// NavBar toggling functionality for smaller screens
+
 const navToggle = document.getElementById('nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 const navLinkBtn = document.querySelector('.nav-link-btn');
+const scrollLinks = document.querySelectorAll('.scroll-links');
+
 navToggle.addEventListener('click', () => {
 	navLinks.classList.toggle('show-links');
 	navLinkBtn.classList.toggle('hidden');
 });
+
+scrollLinks.forEach((link) => {
+	link.addEventListener('click', (e) => {
+		navLinks.classList.remove('show-links');
+		removeActive();
+		e.target.classList.add('active');
+	});
+});
+
+function removeActive() {
+	scrollLinks.forEach((link) => {
+		link.classList.remove('active');
+	});
+}
+
+// const logo = document.querySelector('.logo');
+// logo.onClick = function (e) {
+// 	window.location = 'index.html';
+// 	console.log('e');
+// };
