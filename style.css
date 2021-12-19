@@ -175,7 +175,6 @@ p {
 .nav-links {
 	height: 0;
 	overflow: hidden;
-	transition: var(--transition);
 	text-align: center;
 	background-color: transparent;
 	backdrop-filter: blur(6px);
