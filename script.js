@@ -72,6 +72,7 @@ let data = [
 		info: `American film director, screenwriter, and actor who has appeared in several films, including Meet the Parents and Good Night, and Good Luck, and television series such as The Wire, Boston Public, Law & Order etc.McCarthy won the Academy Award for Best Original Screenplay for Spotlight(2015), and earned him a nomination for the Academy Award for Best Director.`,
 	},
 ];
+const header = document.getElementById('header');
 const hero = document.querySelector('.hero');
 let featuredSpeaker = document.querySelector('.featured-speakers');
 const loadMore = document.querySelector('.load-more');
@@ -168,8 +169,19 @@ closeBtn.addEventListener('click', () => {
 	closeBtn.classList.add('hidden');
 });
 
-// const logo = document.querySelector('.logo');
-// logo.onClick = function (e) {
-// 	window.location = 'index.html';
-// 	console.log('e');
-// };
+const options = {
+	root: null,
+	threshold: 0,
+	rootMargin: '-150px',
+};
+
+const levelUpBtn = document.querySelector('.level-up');
+
+const observer = new IntersectionObserver(function (entries, observer) {
+	entries.forEach((entry) => {
+		if (!entry.isIntersecting) levelUpBtn.classList.remove('hidden');
+		else levelUpBtn.classList.add('hidden');
+	});
+}, options);
+
+observer.observe(header);
