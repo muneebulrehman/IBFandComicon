@@ -1,6 +1,5 @@
 const navToggle = document.getElementById('nav-toggle');
 const navLinks = document.querySelector('.nav-links');
-const navLinkBtn = document.querySelector('.nav-link-btn');
 const scrollLinks = document.querySelectorAll('.scroll-links');
 const closeBtn = document.getElementById('close-btn');
 
@@ -10,6 +9,12 @@ navToggle.addEventListener('click', () => {
 	closeBtn.classList.remove('hidden');
 });
 
+function removeActive() {
+	scrollLinks.forEach((link) => {
+		link.classList.remove('active');
+	});
+}
+
 scrollLinks.forEach((link) => {
 	link.addEventListener('click', (e) => {
 		navLinks.classList.remove('show-links');
@@ -17,12 +22,6 @@ scrollLinks.forEach((link) => {
 		e.target.classList.add('active');
 	});
 });
-
-function removeActive() {
-	scrollLinks.forEach((link) => {
-		link.classList.remove('active');
-	});
-}
 
 closeBtn.addEventListener('click', () => {
 	navLinks.classList.remove('show-links');
