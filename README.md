@@ -5,6 +5,9 @@
 ## Live Demo
 https://muneebulrehman.github.io/IBFandComicon/
 
+###Link to Loom video
+https://www.loom.com/share/3b420e99767a40069aa42078cfaeefad
+
 Additional description about the project and its features.
 - Hero section
 - Main section with details about event.
