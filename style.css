@@ -364,8 +364,8 @@ p {
 }
 
 .level-up {
-  font-size: 1.5rem;
-  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
   border: 1px solid orange;
   border-radius: 50%;
   background-color: orange;
@@ -377,7 +377,7 @@ p {
 }
 
 .fa-long-arrow-alt-up {
-  margin: 1rem;
+  margin: 0.75rem;
   cursor: pointer;
 }
 
@@ -427,6 +427,10 @@ p {
   .level-up {
     padding: 1rem 1.5rem;
     left: 90%;
+  }
+
+  .fa-long-arrow-alt-up {
+    margin: 1rem;
   }
 }
 
