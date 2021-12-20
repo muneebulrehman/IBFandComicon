@@ -317,7 +317,6 @@ p {
 	border: 1px solid orange;
 	border-radius: 50%;
 	background-color: orange;
-	cursor: pointer;
 	position: fixed;
 	left: 75%;
 	bottom: 10%;
@@ -326,6 +325,7 @@ p {
 }
 .fa-long-arrow-alt-up {
 	margin: 1rem;
+	cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
