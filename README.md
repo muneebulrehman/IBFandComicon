@@ -3,10 +3,10 @@
 # International Book Fair and Comicon.
 
 ## Live Demo
-https://muneebulrehman.github.io/IBFandComicon/
+ [@Link](https://muneebulrehman.github.io/IBFandComicon/)
 
 ###Link to Loom video
-https://www.loom.com/share/3b420e99767a40069aa42078cfaeefad
+[@Link](https://www.loom.com/share/3b420e99767a40069aa42078cfaeefad)
 
 Additional description about the project and its features.
 - Hero section
@@ -40,7 +40,7 @@ Browser. Any modern browser should do the job.
 Just download or clone the repo and run the index.html file.
 
 
-## Authors
+## Author
 
 👤 **Muneeb Ul Rehman**
 
@@ -54,6 +54,8 @@ Contributions, issues, and feature requests are welcome!
 
 Give a ⭐️ if you like this project!
 
-## Thanks to the designer for providing the template.
-- Website: [@Link](https://www.behance.net/adagio07)
+## Report an issue
+-Go here 👉 [@Link](https://github.com/muneebulrehman/IBFandComicon/issues)
 
+## Thanks to Cindy Shin for providing the template.
+- Website: [@Link](https://www.behance.net/adagio07)
