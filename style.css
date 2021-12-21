@@ -182,14 +182,14 @@ p {
   padding: 0.5rem;
   width: 100%;
   margin: 0 auto;
-  background: transparent;
+  background: var(--clr-white);
 }
 
 .nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: transparent;
+  background: var(--clr-white);
 }
 
 .nav-toggle {
@@ -209,7 +209,6 @@ p {
   overflow: hidden;
   text-align: center;
   background-color: transparent;
-  padding-top: 1.5rem;
 }
 
 .show-links {
@@ -220,6 +219,7 @@ p {
   right: 0;
   height: 100vh;
   backdrop-filter: blur(6px);
+  padding-top: 1.5rem;
 }
 
 .nav-link {
