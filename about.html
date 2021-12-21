@@ -9,7 +9,7 @@
 		<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 	</head>
 	<body>
-		<header class="header" id="header">
+		<header class="header">
 			<nav class="navbar">
 				<div class="nav-icons">
 					<ul class="nav-icons-list">
@@ -48,6 +48,7 @@
 							<i class="fas fa-bars"></i>
 						</button>
 					</div>
+
 					<ul class="nav-links" id="nav-links">
 						<li>
 							<button type="button" id="close-btn" class="hidden">
@@ -57,7 +58,7 @@
 						<li>
 							<a
 								href="about.html"
-								class="nav-link scroll-links"
+								class="nav-link scroll-links active"
 								aria-hidden="true"
 								>About</a
 							>
@@ -99,117 +100,82 @@
 					</ul>
 				</div>
 			</nav>
-			<div class="hero">
-				<div class="hero-text">
-					<h2>"Hello! Geeks and Nerds"</h2>
+			<div class="hero about-hero">
+				<div class="hero-text about-hero-text">
 					<h1>International Book Fair and Comicon 2022</h1>
-					<p class="hero-text-p">
+					<p id="hero-text-p">
 						Comicon and book fair bringing all the fans from over the world
 						together. 7 day event with lots of activities, award ceremony and
 						interactions with some of the most successful writers of our time.
+						Book Fairs serve to promote the habit of reading in people. By
+						offering a wide selection of books and related material throughout
+						the duration of event, we wish to give you an opportunity to read by
+						choice and not by compulsion.
 					</p>
-					<div class="information">
-						<div class="info-text">
-							<h2 id="starting-date">24.01.2022(MON) ~ 30(SUN) 9 AM ~ 8 PM</h2>
-							<h3>@Royal Arena, Copenhagen, Denmark</h3>
+					<div class="about-information">
+						<div class="about-info-text">
+							<p>
+								Please contact us per Email for any further questions about IBF
+								& Comicon 2022
+							</p>
+							<p class="email-address">bhatmuneeb.mb@gmail.com</p>
+							<div class="underline"></div>
 						</div>
-						<table class="date-container">
-							<tr>
-								<td colspan="4">Countdown Timer</td>
-							</tr>
-							<tr>
-								<td>Days</td>
-								<td>Hours</td>
-								<td>Minutes</td>
-								<td>Seconds</td>
-							</tr>
-							<tr>
-								<td id="days">120</td>
-								<td id="hours">06</td>
-								<td id="minutes">400</td>
-								<td id="seconds">20</td>
-							</tr>
-						</table>
 					</div>
 				</div>
 			</div>
-			<span class="level-up"
-				><a href="#header"><i class="fas fa-long-arrow-alt-up"></i></a
-			></span>
 		</header>
-		<section class="programs">
-			<div class="program-title">
-				<h2>Main Programs</h2>
-				<div class="underline"></div>
-			</div>
-			<div class="all-programs">
-				<div class="one-program">
-					<img src="./images/icons/comicon.png" alt="" class="icon-img" />
-					<h4>Comicon</h4>
-					<p>
-						Dress up as your favourite character from your favourite book or
-						comic.
-					</p>
+		<section class="logo-information">
+			<h3>International Book Fair & Comicon 2022 Logo</h3>
+			<div class="small-underline"></div>
+			<p class="logo-information-p">
+				The logo of IBF & Comicon 2022 was decided through the logo competition
+				from 10.December to 18.December.
+				<span class="hide-later">
+					After online public voting and Selection Comittee's judging process.
+					the logo from Muneeb Ul Rehman won the prize. After cousultation with
+					Mr.Muneeb we optimized the prize-winning-logo for this year's comicon
+					as following:</span
+				>
+			</p>
+			<div class="about-logo-big">
+				<div class="logo about-logo">
+					<img
+						src="./images/icons/books.png"
+						alt="Logo image"
+						class="logo-img"
+					/>
+					<div class="logo-text">
+						<span>Book</span>
+						<br />
+						<span>Shelf</span>
+					</div>
 				</div>
-				<div class="one-program">
-					<img src="./images/icons/reading-book.png" alt="" class="icon-img" />
-					<h4>Book Reading</h4>
-					<p>
-						Listen to a part of your favourite book from the author himself.
-					</p>
-				</div>
-				<div class="one-program">
-					<img src="./images/icons/ask-question.png" alt="" class="icon-img" />
-					<h4>Ask the author</h4>
-					<p>
-						A chance for AMA with your favourite author. Have your questions
-						answered.
-					</p>
-				</div>
-				<div class="one-program">
-					<img src="./images/icons/trophy.png" alt="" class="icon-img" />
-					<h4>Award ceremony</h4>
-					<p>Event where the best author of each category will be crowned.</p>
-				</div>
-				<div class="one-program">
-					<img src="./images/icons/community.png" alt="" class="icon-img" />
-					<h4>Community</h4>
-					<p>
-						Have the chance to interact and share thoughts and experiences with
-						other fans.
-					</p>
-				</div>
-				<div class="one-program">
-					<img src="./images/icons/give-away.png" alt="" class="icon-img" />
-					<h4>Giveaways</h4>
-					<p>
-						A chance to take home some of the coolest prizes form hundreds of
-						fantasy worlds.
-					</p>
-				</div>
-			</div>
-			<div class="join-div">
-				<a href="#" class="btn join-btn">Join IBF And Comicon 2022</a>
-			</div>
-			<div class="more-info">
-				<h3><a href="#">SEE THE WHOLE PROGRAM</a></h3>
+				<hr />
+				<span class="small">24th-30th Jan 2022 | Copenhagen Denmark</span>
 				<hr />
 			</div>
 		</section>
 
-		<section class="speakers">
-			<div class="program-title">
-				<h2>Featured Authors</h2>
-				<div class="underline"></div>
-			</div>
-			<div class="featured-speakers"></div>
-			<div class="load-more-btn">
-				<button type="button" class="btn load-more">
-					Load More <span><i class="fas fa-angle-down"></i></span>
-				</button>
+		<section class="past-events">
+			<h3>See the past IBF's & Comicons</h3>
+			<div class="small-underline"></div>
+			<p>
+				Take a look at the last two IBF & Comicon which took place in Miami and
+				in Berlin
+			</p>
+			<div class="about-cards">
+				<div class="card card-1">
+					<h3 class="card-title">2018</h3>
+					<p>IBF & Comicon 2018 in Miami</p>
+				</div>
+				<div class="card card-2">
+					<h3 class="card-title">2019</h3>
+					<p>IBF & Comicon 2018 in Berlin</p>
+				</div>
 			</div>
 		</section>
-		<section class="partners">
+		<section class="about-partners partners">
 			<div class="program-title">
 				<h2>Partners</h2>
 				<div class="underline"></div>
@@ -236,24 +202,24 @@
 				</div>
 			</div>
 		</section>
-		<footer class="footer">
-			<div class="footer-logo">
+		<footer class="about-footer">
+			<div class="about-footer-logo">
 				<div class="logo">
 					<img
 						src="./images/icons/books.png"
 						alt="Logo image"
 						class="logo-img"
 					/>
-					<div class="logo-text">
+					<div class="logo-text-about">
 						<span>Book</span>
 						<br />
 						<span>Shelf</span>
 					</div>
 				</div>
 			</div>
-			<div class="footer-text">
+			<div class="about-footer-text">
 				<p>2022 International Book Fair and Commicon. All Rights Reserved</p>
-				<p>
+				<p class="hide-for-small">
 					For any copyright violation, please contact on the following email
 					address: bhatmuneeb.mb@gmail.com.
 				</p>
@@ -264,6 +230,6 @@
 			src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
 			data-auto-a11y="true"
 		></script>
-		<script src="./script.js" async></script>
+		<script src="./script2.js" async></script>
 	</body>
 </html>
