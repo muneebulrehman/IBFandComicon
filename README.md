@@ -1,12 +1,8 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # International Book Fair and Comicon.
 
 ## Live Demo
  [@Link](https://muneebulrehman.github.io/IBFandComicon/)
-
-###Link to Loom video
-[@Link](https://www.loom.com/share/3b420e99767a40069aa42078cfaeefad)
 
 Additional description about the project and its features.
 - Hero section
@@ -57,5 +53,3 @@ Give a ⭐️ if you like this project!
 ## Report an issue
 -Go here 👉 [@Link](https://github.com/muneebulrehman/IBFandComicon/issues)
 
-## Thanks to Cindy Shin for providing the template.
-- Website: [@Link](https://www.behance.net/adagio07)
