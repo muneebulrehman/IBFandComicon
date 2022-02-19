@@ -93,7 +93,7 @@ let initialLoad = 0;
 
 function printCards() {
 	for (let i = initialLoad; i < initialLoad + 4; i += 1) {
-		const markup = `<div class="each-speaker">
+		const markup = `<div class="each-speaker" data-aos="zoom-out" data-aos-delay="200">
 					<div class='speaker-img'>
 					<img src='${data[i].img}' class='speaker-photo' alt="">
 					</div>
@@ -107,7 +107,7 @@ function printCards() {
 				</div>`;
 		featuredSpeaker.innerHTML += markup;
 		if (initialLoad === data.length - 4) {
-			loadMoreBtn.classList.add('hidden');
+			loadMoreBtn.style.display = 'none';
 		}
 	}
 	initialLoad += 4;
@@ -120,7 +120,7 @@ loadMore.addEventListener('click', printCards);
 
 function countDown() {
 	const now = new Date();
-	const eventDate = new Date(2022, 1, 24, 9);
+	const eventDate = new Date(2022, 9, 24, 9);
 	const currentTime = now.getTime();
 	const eventTime = eventDate.getTime();
 
