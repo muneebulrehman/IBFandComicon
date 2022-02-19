@@ -1,14 +1,14 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # International Book Fair and Comicon.
 
 ## Live Demo
- [@Link](https://muneebulrehman.github.io/IBFandComicon/)
+
+[@Link](https://muneebulrehman.github.io/IBFandComicon/)
 
 ###Link to Loom video
 [@Link](https://www.loom.com/share/3b420e99767a40069aa42078cfaeefad)
 
 Additional description about the project and its features.
+
 - Hero section
 - Main section with details about event.
 - Featured speakers section.
@@ -19,7 +19,8 @@ Additional description about the project and its features.
 # Getting Started
 
 To get a local copy up and running follow these simple steps.
-- You can clone this repo by typing  on your terminal.<pre><code>git clone github.com/muneebulrehman/IBFandComicon.git</code></pre>
+
+- You can clone this repo by typing on your terminal.<pre><code>git clone github.com/muneebulrehman/IBFandComicon.git</code></pre>
 - Type <pre><code>cd IBFandComicon</code></pre> to access the project on the terminal
 
 ## Built With
@@ -34,11 +35,12 @@ To get a local copy up and running follow these simple steps.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+
 Browser. Any modern browser should do the job.
 
 ### Setup
-Just download or clone the repo and run the index.html file.
 
+Just download or clone the repo and run the index.html file.
 
 ## Author
 
@@ -55,7 +57,9 @@ Contributions, issues, and feature requests are welcome!
 Give a ⭐️ if you like this project!
 
 ## Report an issue
+
 -Go here 👉 [@Link](https://github.com/muneebulrehman/IBFandComicon/issues)
 
 ## Thanks to Cindy Shin for providing the template.
+
 - Website: [@Link](https://www.behance.net/adagio07)
