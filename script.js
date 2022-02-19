@@ -107,7 +107,7 @@ function printCards() {
 				</div>`;
 		featuredSpeaker.innerHTML += markup;
 		if (initialLoad === data.length - 4) {
-			loadMoreBtn.classList.add('hidden');
+			loadMoreBtn.style.display = 'none';
 		}
 	}
 	initialLoad += 4;
@@ -120,7 +120,7 @@ loadMore.addEventListener('click', printCards);
 
 function countDown() {
 	const now = new Date();
-	const eventDate = new Date(2022, 1, 24, 9);
+	const eventDate = new Date(2022, 9, 24, 9);
 	const currentTime = now.getTime();
 	const eventTime = eventDate.getTime();
 

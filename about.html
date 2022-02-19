@@ -6,6 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./style.css" />
 		<title>Book Shelf</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 	</head>
 	<body>
@@ -39,9 +44,10 @@
 								class="logo-img"
 							/>
 							<div class="logo-text">
-								<span>Book</span>
+								<!-- <span>Book</span>
 								<br />
-								<span>Shelf</span>
+								<span>Shelf</span> -->
+								<span>I B & C</span>
 							</div>
 						</div>
 						<button type="button" class="nav-toggle" id="nav-toggle">
@@ -65,30 +71,18 @@
 						</li>
 						<li>
 							<a
-								href="#program"
+								href="#logo-info"
 								class="nav-link scroll-links"
 								aria-hidden="true"
-								>Program</a
+								>Our Logo</a
 							>
 						</li>
 						<li>
-							<a href="#join" class="nav-link scroll-links" aria-hidden="true"
-								>Join</a
+							<a href="#events" class="nav-link scroll-links" aria-hidden="true"
+								>Past Events</a
 							>
 						</li>
-						<li>
-							<a
-								href="#sponser"
-								class="nav-link scroll-links"
-								aria-hidden="true"
-								>Sponser</a
-							>
-						</li>
-						<li>
-							<a href="#news" class="nav-link scroll-links" aria-hidden="true"
-								>News</a
-							>
-						</li>
+
 						<li>
 							<a
 								href="#compaign"
@@ -102,8 +96,10 @@
 			</nav>
 			<div class="hero about-hero">
 				<div class="hero-text about-hero-text">
-					<h1>International Book Fair and Comicon 2022</h1>
-					<p id="hero-text-p">
+					<h1 class="animate__animated animate__bounceInDown">
+						International Book Fair and Comicon 2022
+					</h1>
+					<p id="hero-text-p" class="animate__animated animate__backInLeft">
 						Comicon and book fair bringing all the fans from over the world
 						together. 7 day event with lots of activities, award ceremony and
 						interactions with some of the most successful writers of our time.
@@ -112,7 +108,7 @@
 						the duration of event, we wish to give you an opportunity to read by
 						choice and not by compulsion.
 					</p>
-					<div class="about-information">
+					<div class="about-information animate__animated animate__backInRight">
 						<div class="about-info-text">
 							<p>
 								Please contact us per Email for any further questions about IBF
@@ -125,7 +121,12 @@
 				</div>
 			</div>
 		</header>
-		<section class="logo-information">
+		<section
+			class="logo-information"
+			id="logo-info"
+			data-aos="fade-up"
+			data-aos-delay="300"
+		>
 			<h3>International Book Fair & Comicon 2022 Logo</h3>
 			<div class="small-underline"></div>
 			<p class="logo-information-p">
@@ -138,7 +139,7 @@
 					as following:</span
 				>
 			</p>
-			<div class="about-logo-big">
+			<div class="about-logo-big" data-aos="zoom-in-down">
 				<div class="logo about-logo">
 					<img
 						src="./images/icons/books.png"
@@ -146,18 +147,19 @@
 						class="logo-img"
 					/>
 					<div class="logo-text">
-						<span>Book</span>
+						<span>I B & C</span>
+						<!-- <span>Book</span>
 						<br />
-						<span>Shelf</span>
+						<span>Shelf</span> -->
 					</div>
 				</div>
 				<hr />
-				<span class="small">24th-30th Jan 2022 | Copenhagen Denmark</span>
+				<span class="small">24th-30th Oct 2022 | Copenhagen Denmark</span>
 				<hr />
 			</div>
 		</section>
 
-		<section class="past-events">
+		<section class="past-events" id="events" data-aos="zoom-out-up">
 			<h3>See the past IBF's & Comicons</h3>
 			<div class="small-underline"></div>
 			<p>
@@ -225,6 +227,16 @@
 				</p>
 			</div>
 		</footer>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				delay: 500,
+				duration: 800,
+				easing: 'ease',
+				once: false,
+				mirror: false,
+			});
+		</script>
 
 		<script
 			src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
