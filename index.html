@@ -4,6 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="./style.css" />
 		<title>Book Shelf</title>
 		<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
@@ -101,14 +106,18 @@
 			</nav>
 			<div class="hero">
 				<div class="hero-text">
-					<h2>"Hello! Geeks and Nerds"</h2>
-					<h1>International Book Fair and Comicon 2022</h1>
-					<p class="hero-text-p">
+					<h2 class="animate__animated animate__backInLeft">
+						"Hello! Geeks and Nerds"
+					</h2>
+					<h1 class="animate__animated animate__zoomInDown">
+						International Book Fair and Comicon 2022
+					</h1>
+					<p class="hero-text-p animate__animated animate__backInRight">
 						Comicon and book fair bringing all the fans from over the world
 						together. 7 day event with lots of activities, award ceremony and
 						interactions with some of the most successful writers of our time.
 					</p>
-					<div class="information">
+					<div class="information animate__animated animate__backInUp">
 						<div class="info-text">
 							<h2 id="starting-date">24.01.2022(MON) ~ 30(SUN) 9 AM ~ 8 PM</h2>
 							<h3>@Royal Arena, Copenhagen, Denmark</h3>
@@ -137,13 +146,13 @@
 				><a href="#header"><i class="fas fa-long-arrow-alt-up"></i></a
 			></span>
 		</header>
-		<section class="programs">
+		<section class="programs" data-aos="fade-up" data-aos-delay="300">
 			<div class="program-title">
 				<h2>Main Programs</h2>
 				<div class="underline"></div>
 			</div>
 			<div class="all-programs">
-				<div class="one-program">
+				<div class="one-program" data-aos="flip-left">
 					<img src="./images/icons/comicon.png" alt="" class="icon-img" />
 					<h4>Comicon</h4>
 					<p>
@@ -151,14 +160,14 @@
 						comic.
 					</p>
 				</div>
-				<div class="one-program">
+				<div class="one-program" data-aos="flip-left">
 					<img src="./images/icons/reading-book.png" alt="" class="icon-img" />
 					<h4>Book Reading</h4>
 					<p>
 						Listen to a part of your favourite book from the author himself.
 					</p>
 				</div>
-				<div class="one-program">
+				<div class="one-program" data-aos="flip-left">
 					<img src="./images/icons/ask-question.png" alt="" class="icon-img" />
 					<h4>Ask the author</h4>
 					<p>
@@ -166,12 +175,12 @@
 						answered.
 					</p>
 				</div>
-				<div class="one-program">
+				<div class="one-program" data-aos="flip-right">
 					<img src="./images/icons/trophy.png" alt="" class="icon-img" />
 					<h4>Award ceremony</h4>
 					<p>Event where the best author of each category will be crowned.</p>
 				</div>
-				<div class="one-program">
+				<div class="one-program" data-aos="flip-right">
 					<img src="./images/icons/community.png" alt="" class="icon-img" />
 					<h4>Community</h4>
 					<p>
@@ -179,7 +188,7 @@
 						other fans.
 					</p>
 				</div>
-				<div class="one-program">
+				<div class="one-program" data-aos="flip-right">
 					<img src="./images/icons/give-away.png" alt="" class="icon-img" />
 					<h4>Giveaways</h4>
 					<p>
@@ -209,7 +218,12 @@
 				</button>
 			</div>
 		</section>
-		<section class="partners">
+		<section
+			class="partners"
+			data-aos="fade-right"
+			data-aos-offset="300"
+			data-aos-easing="ease-in-sine"
+		>
 			<div class="program-title">
 				<h2>Partners</h2>
 				<div class="underline"></div>
@@ -236,7 +250,8 @@
 				</div>
 			</div>
 		</section>
-		<footer class="footer">
+		<footer class="footer" data-aos="fade-up" data-aos-duration="3000">
+			>
 			<div class="footer-logo">
 				<div class="logo">
 					<img
@@ -259,7 +274,16 @@
 				</p>
 			</div>
 		</footer>
-
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				delay: 500,
+				duration: 800,
+				easing: 'ease',
+				once: false,
+				mirror: false,
+			});
+		</script>
 		<script
 			src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
 			data-auto-a11y="true"
