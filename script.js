@@ -93,7 +93,7 @@ let initialLoad = 0;
 
 function printCards() {
   for (let i = initialLoad; i < initialLoad + 4; i += 1) {
-    const markup = `<div class="each-speaker" data-aos="zoom-out" data-aos-delay="200">
+    const markup = `<div class="each-speaker" data-aos="zoom-in" data-aos-delay="200">
 					<div class='speaker-img'>
 					<img src='${data[i].img}' class='speaker-photo' alt="">
 					</div>
