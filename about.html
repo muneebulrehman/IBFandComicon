@@ -1,247 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./style.css" />
-		<title>Book Shelf</title>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-		/>
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-		<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-	</head>
-	<body>
-		<header class="header">
-			<nav class="navbar">
-				<div class="nav-icons">
-					<ul class="nav-icons-list">
-						<li>
-							<span class="social_icon"><i class="fab fa-facebook"></i></span>
-						</li>
-						<li>
-							<span class="social_icon"> <i class="fab fa-twitter"></i></span>
-						</li>
-						<li>
-							<span class="social_icon">English</span>
-						</li>
-						<li>
-							<span class="social_icon">My Page</span>
-						</li>
-						<li>
-							<span class="social_icon">Logout</span>
-						</li>
-					</ul>
-				</div>
-				<div class="nav-center">
-					<div class="nav-header">
-						<div class="logo" onclick="window.location='index.html';">
-							<img
-								src="./images/icons/books.png"
-								alt="Logo image"
-								class="logo-img"
-							/>
-							<div class="logo-text">
-								<!-- <span>Book</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Book Shelf</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-icons">
+          <ul class="nav-icons-list">
+            <li>
+              <span class="social_icon"><i class="fab fa-facebook"></i></span>
+            </li>
+            <li>
+              <span class="social_icon"> <i class="fab fa-twitter"></i></span>
+            </li>
+            <li>
+              <span class="social_icon">English</span>
+            </li>
+            <li>
+              <span class="social_icon">My Page</span>
+            </li>
+            <li>
+              <span class="social_icon">Logout</span>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-center">
+          <div class="nav-header">
+            <div class="logo" onclick="window.location='index.html';">
+              <img src="./images/icons/books.png" alt="Logo image" class="logo-img" />
+              <div class="logo-text">
+                <!-- <span>Book</span>
 								<br />
 								<span>Shelf</span> -->
-								<span>I B & C</span>
-							</div>
-						</div>
-						<button type="button" class="nav-toggle" id="nav-toggle">
-							<i class="fas fa-bars"></i>
-						</button>
-					</div>
+                <span>I B & C</span>
+              </div>
+            </div>
+            <button type="button" class="nav-toggle" id="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
 
-					<ul class="nav-links" id="nav-links">
-						<li>
-							<button type="button" id="close-btn" class="hidden">
-								<i class="fas fa-times"></i>
-							</button>
-						</li>
-						<li>
-							<a
-								href="about.html"
-								class="nav-link scroll-links active"
-								aria-hidden="true"
-								>About</a
-							>
-						</li>
-						<li>
-							<a
-								href="#logo-info"
-								class="nav-link scroll-links"
-								aria-hidden="true"
-								>Our Logo</a
-							>
-						</li>
-						<li>
-							<a href="#events" class="nav-link scroll-links" aria-hidden="true"
-								>Past Events</a
-							>
-						</li>
+          <ul class="nav-links" id="nav-links">
+            <li>
+              <button type="button" id="close-btn" class="hidden">
+                <i class="fas fa-times"></i>
+              </button>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link scroll-links active" aria-hidden="true">About</a>
+            </li>
+            <li>
+              <a href="#logo-info" class="nav-link scroll-links" aria-hidden="true">Our Logo</a>
+            </li>
+            <li>
+              <a href="#events" class="nav-link scroll-links" aria-hidden="true">Past Events</a>
+            </li>
 
-						<li>
-							<a
-								href="#compaign"
-								class="btn nav-link-btn nav-link"
-								aria-hidden="true"
-								>CC compaign</a
-							>
-						</li>
-					</ul>
-				</div>
-			</nav>
-			<div class="hero about-hero">
-				<div class="hero-text about-hero-text">
-					<h1 class="animate__animated animate__bounceInDown">
-						International Book Fair and Comicon 2022
-					</h1>
-					<p id="hero-text-p" class="animate__animated animate__backInLeft">
-						Comicon and book fair bringing all the fans from over the world
-						together. 7 day event with lots of activities, award ceremony and
-						interactions with some of the most successful writers of our time.
-						Book Fairs serve to promote the habit of reading in people. By
-						offering a wide selection of books and related material throughout
-						the duration of event, we wish to give you an opportunity to read by
-						choice and not by compulsion.
-					</p>
-					<div class="about-information animate__animated animate__backInRight">
-						<div class="about-info-text">
-							<p>
-								Please contact us per Email for any further questions about IBF
-								& Comicon 2022
-							</p>
-							<p class="email-address">bhatmuneeb.mb@gmail.com</p>
-							<div class="underline"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		<section
-			class="logo-information"
-			id="logo-info"
-			data-aos="fade-up"
-			data-aos-delay="300"
-		>
-			<h3>International Book Fair & Comicon 2022 Logo</h3>
-			<div class="small-underline"></div>
-			<p class="logo-information-p">
-				The logo of IBF & Comicon 2022 was decided through the logo competition
-				from 10.December to 18.December.
-				<span class="hide-later">
-					After online public voting and Selection Comittee's judging process.
-					the logo from Muneeb Ul Rehman won the prize. After cousultation with
-					Mr.Muneeb we optimized the prize-winning-logo for this year's comicon
-					as following:</span
-				>
-			</p>
-			<div class="about-logo-big" data-aos="zoom-in-down">
-				<div class="logo about-logo">
-					<img
-						src="./images/icons/books.png"
-						alt="Logo image"
-						class="logo-img"
-					/>
-					<div class="logo-text">
-						<span>I B & C</span>
-						<!-- <span>Book</span>
-						<br />
-						<span>Shelf</span> -->
-					</div>
-				</div>
-				<hr />
-				<span class="small">24th-30th Oct 2022 | Copenhagen Denmark</span>
-				<hr />
-			</div>
-		</section>
+            <li>
+              <a href="#compaign" class="btn nav-link-btn nav-link" aria-hidden="true"
+                >CC compaign</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero about-hero">
+        <div class="hero-text about-hero-text">
+          <h1 class="animate__animated animate__bounceInDown">
+            International Book Fair and Comicon 2022
+          </h1>
+          <p id="hero-text-p" class="animate__animated animate__backInLeft">
+            Comicon and book fair bringing all the fans from over the world together. 7 day event
+            with lots of activities, award ceremony and interactions with some of the most
+            successful writers of our time. Book Fairs serve to promote the habit of reading in
+            people. By offering a wide selection of books and related material throughout the
+            duration of event, we wish to give you an opportunity to read by choice and not by
+            compulsion.
+          </p>
+          <div class="about-information animate__animated animate__backInRight">
+            <div class="about-info-text">
+              <p>Please contact us per Email for any further questions about IBF & Comicon 2022</p>
+              <p class="email-address">bhatmuneeb.mb@gmail.com</p>
+              <div class="underline"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="logo-information" id="logo-info" data-aos="fade-up" data-aos-delay="300">
+      <h3>International Book Fair & Comicon 2022 Logo</h3>
+      <div class="small-underline"></div>
+      <p class="logo-information-p">
+        The logo of IBF & Comicon 2022 was decided through the logo competition from 10.December to
+        18.December.
+        <span class="hide-later">
+          After online public voting and Selection Comittee's judging process. the logo from Muneeb
+          Ul Rehman won the prize. After cousultation with Mr.Muneeb we optimized the
+          prize-winning-logo for this year's comicon as following:</span
+        >
+      </p>
+      <div class="about-logo-big" data-aos="zoom-in-down">
+        <div class="logo about-logo">
+          <img src="./images/icons/books.png" alt="Logo image" class="logo-img" />
+          <div class="logo-text">
+            <span>I B & C</span>
+          </div>
+        </div>
+        <hr />
+        <span class="small">24th-30th Oct 2022 | Copenhagen Denmark</span>
+        <hr />
+      </div>
+    </section>
 
-		<section class="past-events" id="events" data-aos="zoom-out-up">
-			<h3>See the past IBF's & Comicons</h3>
-			<div class="small-underline"></div>
-			<p>
-				Take a look at the last two IBF & Comicon which took place in Miami and
-				in Berlin
-			</p>
-			<div class="about-cards">
-				<div class="card card-1">
-					<h3 class="card-title">2018</h3>
-					<p>IBF & Comicon 2018 in Miami</p>
-				</div>
-				<div class="card card-2">
-					<h3 class="card-title">2019</h3>
-					<p>IBF & Comicon 2018 in Berlin</p>
-				</div>
-			</div>
-		</section>
-		<section class="about-partners partners">
-			<div class="program-title">
-				<h2>Partners</h2>
-				<div class="underline"></div>
-			</div>
-			<div class="all-partners">
-				<div class="each-partner lh">
-					<h3>Literary</h3>
-					<h3>Hub</h3>
-				</div>
-				<div class="each-partner google">
-					<h3>google</h3>
-				</div>
-				<div class="each-partner yelp">
-					<h3>yelp</h3>
-					<span class="yelp-i"><i class="fab fa-yelp"></i></span>
-				</div>
-				<div class="each-partner cc">
-					<h3>culture</h3>
-					<h3>cursaders</h3>
-				</div>
-				<div class="each-partner airbnb">
-					<span class="airbnb-i"><i class="fab fa-airbnb"></i></span>
-					<h3>airbnb</h3>
-				</div>
-			</div>
-		</section>
-		<footer class="about-footer">
-			<div class="about-footer-logo">
-				<div class="logo">
-					<img
-						src="./images/icons/books.png"
-						alt="Logo image"
-						class="logo-img"
-					/>
-					<div class="logo-text-about">
-						<span>Book</span>
-						<br />
-						<span>Shelf</span>
-					</div>
-				</div>
-			</div>
-			<div class="about-footer-text">
-				<p>2022 International Book Fair and Commicon. All Rights Reserved</p>
-				<p class="hide-for-small">
-					For any copyright violation, please contact on the following email
-					address: bhatmuneeb.mb@gmail.com.
-				</p>
-			</div>
-		</footer>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script>
-			AOS.init({
-				delay: 500,
-				duration: 800,
-				easing: 'ease',
-				once: false,
-				mirror: false,
-			});
-		</script>
+    <section class="past-events" id="events" data-aos="zoom-out-up">
+      <h3>See the past IBF's & Comicons</h3>
+      <div class="small-underline"></div>
+      <p>Take a look at the last two IBF & Comicon which took place in Miami and in Berlin</p>
+      <div class="about-cards">
+        <div class="card card-1">
+          <h3 class="card-title">2018</h3>
+          <p>IBF & Comicon 2018 in Miami</p>
+        </div>
+        <div class="card card-2">
+          <h3 class="card-title">2019</h3>
+          <p>IBF & Comicon 2018 in Berlin</p>
+        </div>
+      </div>
+    </section>
+    <section class="about-partners partners">
+      <div class="program-title">
+        <h2>Partners</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="all-partners">
+        <div class="each-partner lh">
+          <h3>Literary</h3>
+          <h3>Hub</h3>
+        </div>
+        <div class="each-partner google">
+          <h3>google</h3>
+        </div>
+        <div class="each-partner yelp">
+          <h3>yelp</h3>
+          <span class="yelp-i"><i class="fab fa-yelp"></i></span>
+        </div>
+        <div class="each-partner cc">
+          <h3>culture</h3>
+          <h3>cursaders</h3>
+        </div>
+        <div class="each-partner airbnb">
+          <span class="airbnb-i"><i class="fab fa-airbnb"></i></span>
+          <h3>airbnb</h3>
+        </div>
+      </div>
+    </section>
+    <footer class="about-footer">
+      <div class="about-footer-logo">
+        <div class="logo">
+          <img src="./images/icons/books.png" alt="Logo image" class="logo-img" />
+          <div class="logo-text-about">
+            <span>I B & C</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-footer-text">
+        <p>2022 International Book Fair and Commicon. All Rights Reserved</p>
+        <p class="hide-for-small">
+          For any copyright violation, please contact on the following email address:
+          bhatmuneeb.mb@gmail.com.
+        </p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 500,
+        duration: 800,
+        easing: 'ease',
+        once: false,
+        mirror: false,
+      });
+    </script>
 
-		<script
-			src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-			data-auto-a11y="true"
-		></script>
-		<script src="./script2.js" async></script>
-	</body>
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+    <script src="./script2.js" async></script>
+  </body>
 </html>
