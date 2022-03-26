@@ -93,18 +93,31 @@ let initialLoad = 0;
 
 function printCards() {
   for (let i = initialLoad; i < initialLoad + 4; i += 1) {
-    const markup = `<div class="each-speaker" data-aos="zoom-in" data-aos-delay="200">
-					<div class='speaker-img'>
-					<img src='${data[i].img}' class='speaker-photo' alt="">
-					</div>
-					<div class="speaker-text">
-						<h3>${data[i].name}</h3>
-						<span class="italic">${data[i].known}</span>
-						<div class="underline-small"></div>
-						<p class="speaker-text-p">${data[i].info}</p>
+    // const markup = `<div class="each-speaker" data-aos="zoom-in" data-aos-delay="200">
+    // 			<div class='speaker-img'>
+    // 			<img src='${data[i].img}' class='speaker-photo' alt="">
+    // 			</div>
+    // 			<div class="speaker-text">
+    // 				<h3>${data[i].name}</h3>
+    // 				<span class="italic">${data[i].known}</span>
+    // 				<div class="underline-small"></div>
+    // 				<p class="speaker-text-p">${data[i].info}</p>
 
-					</div>
-				</div>`;
+    // 			</div>
+    // 		</div>`;
+    const markup = ` <div class="each-speaker" style="background-image: url(${data[i].img})">
+        <div class="informations-container">
+          <h2 class="title">${data[i].name}</h2>
+          <p class="sub-title">
+            ${data[i].known}
+          </p>
+          <div class="more-information">
+            <p class="disclaimer">
+              ${data[i].info}
+            </p>
+          </div>
+        </div>
+      </div>`;
     featuredSpeaker.innerHTML += markup;
     if (initialLoad === data.length - 4) {
       loadMoreBtn.style.display = 'none';
