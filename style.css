@@ -682,6 +682,9 @@ p {
     width: 25rem;
     flex: 0 0 25rem;
   }
+  .each-speaker:hover .informations-container {
+    transform: translateY(-330px);
+  }
   .disclaimer {
     font-size: 1.2rem;
   }
