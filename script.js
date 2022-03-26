@@ -105,7 +105,10 @@ function printCards() {
 
     // 			</div>
     // 		</div>`;
-    const markup = ` <div class="each-speaker" style="background-image: url(${data[i].img})">
+    const markup = ` <div class="each-speaker" data-aos="zoom-in" data-aos-delay="200">
+    <div class="speaker-img">
+          <img src='${data[i].img}' alt="${data[i].name} photo" />
+        </div>
         <div class="informations-container">
           <h2 class="title">${data[i].name}</h2>
           <p class="sub-title">

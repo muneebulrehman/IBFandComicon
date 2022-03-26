@@ -582,19 +582,18 @@ p {
 .ul {
   display: flex;
   flex-wrap: wrap;
+  gap: 0.75rem;
   justify-content: center;
 }
 .each-speaker {
   position: relative;
   width: min(90%, 20rem);
-  height: 35rem;
+  height: 38rem;
   display: flex;
   flex: 0 0 20rem;
   flex-direction: column;
   object-fit: cover;
-  background-size: cover;
-  background-position: top;
-  margin: 20px;
+  /* margin: 20px; */
   margin-bottom: 30px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -619,20 +618,20 @@ p {
 .sub-title {
   font-size: 1rem;
   color: #ec5241;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  font-style: italic;
 }
 
 .informations-container {
   flex: 1 0 auto;
   padding: 20px;
   background: #f0f0f0;
-  transform: translateY(350px);
+  transform: translateY(-120px);
   transition: 0.3s;
 }
 .informations-container .title {
   position: relative;
   padding-bottom: 10px;
-  margin-bottom: 10px;
   font-weight: bold;
   font-size: 1.2rem;
   color: #0a4870;
@@ -653,18 +652,26 @@ p {
   opacity: 0;
   transition: 0.3s;
 }
+.speaker-img img {
+  display: block;
+  width: 20rem;
+  height: 30rem;
+  object-fit: cover;
+}
 
 .informations-container .more-information .disclaimer {
   margin-top: 3rem;
   font-size: 1rem;
+  line-height: 1.75rem;
   color: #272a31;
+  padding-bottom: 6rem;
 }
 .each-speaker:hover::before {
   background: rgba(10, 72, 112, 0.6);
 }
 
 .each-speaker:hover .informations-container {
-  transform: translateY(0px);
+  transform: translateY(-350px);
 }
 .each-speaker:hover .informations-container .more-information {
   opacity: 1;
@@ -679,7 +686,12 @@ p {
     font-size: 1.2rem;
   }
   .sub-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin-top: 2.5rem;
+  }
+  .speaker-img img {
+    width: 25rem;
+    height: 30rem;
   }
 }
 
@@ -687,13 +699,6 @@ p {
   .speakers {
     padding: 5rem 2rem;
   }
-
-  /* .featured-speakers {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-    margin-top: 3rem;
-  } */
 
   .load-more {
     max-width: 40%;
