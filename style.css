@@ -660,18 +660,18 @@ p {
 }
 
 .informations-container .more-information .disclaimer {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   font-size: 1rem;
-  line-height: 1.75rem;
+  line-height: 1.65rem;
   color: #272a31;
-  padding-bottom: 6rem;
+  padding-bottom: 10rem;
 }
 .each-speaker:hover::before {
   background: rgba(10, 72, 112, 0.6);
 }
 
 .each-speaker:hover .informations-container {
-  transform: translateY(-350px);
+  transform: translateY(-400px);
 }
 .each-speaker:hover .informations-container .more-information {
   opacity: 1;
