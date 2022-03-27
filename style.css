@@ -123,8 +123,7 @@ p {
 
 .header {
   min-height: 100vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(213, 211, 242, 0.8)),
-    url(./images/Hero-img.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(213, 211, 242, 0.8)), url(./images/Hero-img.jpg) center/cover no-repeat;
 }
 
 .logo {
@@ -471,7 +470,6 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
   margin-bottom: 1rem;
   padding: 1rem 0.5rem;
   background: rgba(32, 21, 21, 0.3);
@@ -579,12 +577,14 @@ p {
   background-color: grey;
   margin-bottom: 0.5rem;
 }
+
 .ul {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
   justify-content: center;
 }
+/* stylelint-disable */
 .each-speaker {
   position: relative;
   width: min(90%, 20rem);
@@ -593,7 +593,6 @@ p {
   flex: 0 0 20rem;
   flex-direction: column;
   object-fit: cover;
-  /* margin: 20px; */
   margin-bottom: 30px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -605,6 +604,8 @@ p {
   color: #0a4870;
   transition: 0.3s;
 }
+/* stylelint-enable */
+
 .each-speaker::before {
   content: '';
   position: absolute;
@@ -615,6 +616,7 @@ p {
   background: rgba(10, 72, 112, 0);
   transition: 0.3s;
 }
+
 .sub-title {
   font-size: 1rem;
   color: #ec5241;
@@ -629,6 +631,7 @@ p {
   transform: translateY(-120px);
   transition: 0.3s;
 }
+
 .informations-container .title {
   position: relative;
   padding-bottom: 10px;
@@ -636,6 +639,7 @@ p {
   font-size: 1.2rem;
   color: #0a4870;
 }
+
 .informations-container .title::after {
   content: '';
   position: absolute;
@@ -652,6 +656,7 @@ p {
   opacity: 0;
   transition: 0.3s;
 }
+
 .speaker-img img {
   display: block;
   width: 20rem;
@@ -666,6 +671,7 @@ p {
   color: #272a31;
   padding-bottom: 10rem;
 }
+
 .each-speaker:hover::before {
   background: rgba(10, 72, 112, 0.6);
 }
@@ -673,6 +679,7 @@ p {
 .each-speaker:hover .informations-container {
   transform: translateY(-400px);
 }
+
 .each-speaker:hover .informations-container .more-information {
   opacity: 1;
 }
@@ -682,16 +689,20 @@ p {
     width: 25rem;
     flex: 0 0 25rem;
   }
+
   .each-speaker:hover .informations-container {
     transform: translateY(-330px);
   }
+
   .disclaimer {
     font-size: 1.2rem;
   }
+
   .sub-title {
     font-size: 1.1rem;
     margin-top: 2.5rem;
   }
+
   .speaker-img img {
     width: 25rem;
     height: 30rem;
@@ -956,12 +967,14 @@ p {
   width: 13rem;
 }
 
+/* stylelint-disable */
 .about-logo-big {
   width: min(100%, 30rem);
   padding: 1rem 3rem;
   border: 1px solid var(--clr-grey-5);
   margin: 4rem auto;
 }
+/* stylelint-enable */
 
 .about-logo {
   display: flex;
@@ -1031,11 +1044,13 @@ p {
   margin-top: 3rem;
 }
 
+/* stylelint-disable */
 .card {
   height: 15rem;
   width: min(25rem, 100%);
   text-align: center;
 }
+/* stylelint-enable */
 
 .card-title {
   font-size: 2rem;
@@ -1049,14 +1064,12 @@ p {
 }
 
 .card-1 {
-  background: linear-gradient(rgba(139, 51, 48, 0.7), rgba(139, 51, 48, 0.7)),
-    url(./images/card-1.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(139, 51, 48, 0.7), rgba(139, 51, 48, 0.7)), url(./images/card-1.jpg) center/cover no-repeat;
   font-family: sans-serif;
 }
 
 .card-2 {
-  background: linear-gradient(rgba(139, 51, 48, 0.7), rgba(139, 51, 48, 0.7)),
-    url(./images/card-2.jpg) center/cover no-repeat;
+  background: linear-gradient(rgba(139, 51, 48, 0.7), rgba(139, 51, 48, 0.7)), url(./images/card-2.jpg) center/cover no-repeat;
   font-family: sans-serif;
 }
 
@@ -1132,11 +1145,13 @@ p {
     display: block;
   }
 }
+
 .load-more-btn {
   display: flex;
   justify-content: center;
 }
 
+/* stylelint-disable */
 .load-more,
 .load-more::after {
   padding: 16px 20px;
@@ -1150,6 +1165,7 @@ p {
   outline: transparent;
   position: relative;
 }
+
 
 .load-more::after {
   --slice-0: inset(50% 50% 50% 50%);
@@ -1169,6 +1185,7 @@ p {
   text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
   clip-path: var(--slice-0);
 }
+
 
 .load-more:hover::after {
   animation: 1s glitch;
@@ -1231,6 +1248,8 @@ p {
     transform: translate(0);
   }
 }
+
 .load-more span {
   margin-left: 1rem;
 }
+/* stylelint-enable */
