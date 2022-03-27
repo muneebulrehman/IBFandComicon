@@ -714,29 +714,6 @@ p {
   }
 }
 
-/* .load-more {
-	background: transparent;
-	padding: 1rem 3rem;
-	margin: 0 auto;
-	cursor: pointer;
-	transition: var(--transition);
-	width: 85%;
-	border: 2px solid var(--clr-grey);
-	-webkit-transition: var(--transition);
-	-moz-transition: var(--transition);
-	-ms-transition: var(--transition);
-	-o-transition: var(--transition);
-} */
-
-/* .load-more:hover {
-	background: hsla(355, 78%, 56%, 0.2);
-	transform: translateY(-5px);
-	-webkit-transform: translateY(-5px);
-	-moz-transform: translateY(-5px);
-	-ms-transform: translateY(-5px);
-	-o-transform: translateY(-5px);
-} */
-
 .partners {
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
