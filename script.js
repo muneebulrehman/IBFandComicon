@@ -124,7 +124,7 @@ loadMore.addEventListener('click', printCards);
 
 function countDown() {
 	const now = new Date();
-	const eventDate = new Date(2024, 9, 24, 9);
+	const eventDate = new Date(2024, 9, 23, 9);
 	const currentTime = now.getTime();
 	const eventTime = eventDate.getTime();
 
